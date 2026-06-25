@@ -46,5 +46,5 @@ dependencies {
     implementation(libs.commons.codec)
     implementation(libs.okio)
     implementation(libs.room.runtime)
-    kapt(libs.room.compiler)
+    kapt(libs.room.compiler.get())
 }
