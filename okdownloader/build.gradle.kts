@@ -1,12 +1,11 @@
 plugins {
     id("com.android.library")
     `maven-publish`
-    id("kotlin-kapt") // تأكد من وجود هذا الـ plugin لأنك تستخدم kapt مع Room
-    // أي plugins أخرى تستخدمها...
+    id("kotlin-kapt")
 }
 
 android {
-    compileSdk = 34 // أو الإصدار الذي تستخدمه
+    compileSdk = 33
 
     defaultConfig {
         minSdk = 21
@@ -37,7 +36,6 @@ afterEvaluate {
 }
 
 dependencies {
-    // الاعتمادات الخاصة بك كما هي دون تغيير
     testImplementation(libs.test.junit)
     androidTestImplementation(libs.android.test.junit.ext)
     androidTestImplementation(libs.android.test.espresso)
@@ -46,5 +44,5 @@ dependencies {
     implementation(libs.commons.codec)
     implementation(libs.okio)
     implementation(libs.room.runtime)
-    kapt(libs.room.compiler.get())
+    this.kapt(libs.room.compiler)
 }
