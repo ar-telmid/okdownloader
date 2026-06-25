@@ -1,0 +1,70 @@
+# Project information
+site_name: 'OkDownloader'
+site_description: 'A downloader library base on OkHttp for Java and Android.'
+site_author: '2023 OkDownloader Contributors'
+site_url: 'https://ydxlt.github.io/okdownloader/'
+remote_branch: gh-pages
+edit_uri: ""
+
+# Repository
+repo_name: 'OkDownloader'
+repo_url: 'https://github.com/ydxlt/okdownloader'
+
+# Copyright
+copyright: 'Copyright &copy; 2023 OkDownloader Contributors'
+
+# Configuration
+theme:
+  name: 'material'
+  language: 'en'
+  favicon: 'images/logo.svg'
+  logo: 'images/logo.svg'
+  palette:
+    primary: 'white'
+    accent: 'white'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+
+# Customization
+extra:
+  social:
+    - icon: 'fontawesome/brands/github'
+      link: 'https://github.com/ydxlt/okdownloader'
+
+# Navigation
+nav:
+  - 'Overview': index.md
+  - 'Getting Started': getting_started.md
+  - 'In Android': in_android.md
+  - 'Optional Settings': optional_settings.md
+  - 'How to Expand': downloader_pipeline.md
+  - 'Best Practices': best_practices.md
+  - 'FAQ': faq.md
+  #- 'API ⏏': api/index.html
+  - 'Change Logs': change_logs.md
+  - 'Contributing': contributing.md
+
+# CSS
+extra_css:
+  - 'css/site.css'
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+# Plugins
+plugins:
+  - search
+  - minify:
+      minify_html: true
+
+# Built with https://github.com/squidfunk/mkdocs-material
